@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/leaf.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+  <header id="header">
+    <a href="menu.html" class="me logo animate__bounce">Handysolver</a>
+    <ul>
+      <li><a href="#about" class="active">About Us</a></li>
+      <li><a href="#contact us" class="active">Contact Us</a></li>
+      <li><a href="our products">Our Products</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <p id="text"><span>Make it <b class="bl">Simple</b> but Significant...</span></p>
+    <img
+      src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      class="bg">
+    <btn class="popup" onclick="myFunction()"><a href="#Our Specials" id="btn">View All Products<a>
+          <span class="popuptext" id="myPopup">
+            <li>Mobile Phone</li>
+            <li>Apple</li>
+            <li>Samsung</li>
+            <li>Nokia</li>
+            <li>MI</li>
+            <li>Redmi</li>
+          </span>
+          </div>
+
+  </section>
+
+
+  <a name="our products"></a>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/about.jpg" style="width:100%">
+      <div class="text">Slider One</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/about1.jpeg" style="width:100%">
+      <div class="text">Slider Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/about2.jpeg" style="width:100%">
+      <div class="text">Slider Three</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+  <a name="contact us"></a>
+  <div class="form">
+    <form method="post">
+      <div>
+        <div class="foot fl">
+          <a href="contact.html">
+            <p class="animate__flash contact">LET'S CHAT</p>
+          </a>
+        </div>
+
+        <div class="foott fl">
+          <p class="select2">Email Address</p>
+          <p><input class="s3" type="email" name="uemail" placeholder="Your Email Address" required></p>
+          <p class="select2">Phone Number</p>
+          <p><input class="s3" type="text" maxlength="10" minlength="10" name="unumber"
+              placeholder="Your Mobile Number"></p>
+          <p class="select2">Company Name</p>
+          <p><input class="s3" type="text" name="uname" placeholder="Company's Name"></p>
+        </div>
+        <div class="foott1 fr">
+          <p class="select2">Upload file Design</p>
+          <p><input class="s3" type="file" name="ufile" placeholder="Drop your files here"></p>
+          <p class="select3">Description
+          <p class="s4 s3"><textarea name="umsg" rows="10" cols="53"
+              placeholder="Write something about yourself !!"></textarea></p>
+          <p><input class="send" type="submit" name="query" value="SEND MESSAGE"></p>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <a name="about"></a>
+  <footer>
+    <div class="footer1 fl">
+      <p class="bold">handysolver</p>
+      <p class="lighter">About Us</p>
+      <p class="lighter">In Media</p>
+    </div>
+    <div class="footer2 fl">
+      <p class="bold">OUR SERVICES</p>
+      <p class="lighter">Digital Strategy</p>
+      <p class="lighter">Creative</p>
+      <p class="lighter">Technology</p>
+      <p class="lighter">Marketing</p>
+      <p class="lighter">Paid Campaigns</p>
+      <p class="lighter">Data Anlytics</p>
+    </div>
+    <div class="footer3 fl">
+      <p class="bold">PORTFOLIO</p>
+      <p class="lighter">Work</p>
+      <p class="lighter">Clients</p>
+    </div>
+    <div class="footer4 fl">
+      <p class="bold">CAREERS</p>
+      <p class="lighter">Join Our Team</p>
+    </div>
+    <div class="footer5 fl">
+      <p class="bold">SITEMAP</p>
+      <p class="lighter">At a Glance</p>
+    </div>
+  </footer>
+  </div>
+  <div class="footer fl">
+    <i style="font-size:8px" class="fa">&#xf16d;</i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-facebook-f" style="font-size:18px; color:blue; margin-left:10px;"></i>
+
+    <p class="copyright"> &copy 2022 - handysolver. All Rights Reserved</p>
+    <p class="name">Web design & Development : handysolver</p>
+  </div>
+  <script>
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+
+</body>
+
+</html>
