@@ -21,10 +21,26 @@
 
   <header id="header">
     <a href="menu.html" class="me logo animate__bounce">Handysolver</a>
+
+    <div class="topnav">
+      <a href="#home"></a>
+
+      <div class="links" id="myLinks">
+        <a href="#about">About Us</a>
+        <a href="#contact us">Contact Us</a>
+        <a href="#our products">Our Products</a>
+      </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
     <ul>
       <li><a href="#about" class="active">About Us</a></li>
       <li><a href="#contact us" class="active">Contact Us</a></li>
-      <li><a href="our products" class="active">Our Products</a></li>
+      <li><a href="#our products" class="active">Our Products</a></li>
     </ul>
   </header>
 
@@ -45,7 +61,6 @@
           </div>
 
   </section>
-
 
   <a name="our products"></a>
   <div class="slideshow-container">
@@ -78,7 +93,6 @@
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
 
-
   <a name="contact us"></a>
   <div class="form">
     <form method="post">
@@ -110,7 +124,6 @@
     </form>
   </div>
 
-  <a name="about"></a>
   <footer>
     <div class="footer1 fl">
       <p class="bold">handysolver</p>
@@ -141,12 +154,14 @@
     </div>
   </footer>
   </div>
+
   <div class="footer fl">
     <i style="font-size:8px" class="fa">&#xf16d;</i>
     <i class="fa fa-instagram"></i>
     <i class="fa fa-twitter"></i>
     <i class="fa fa-facebook-f" style="font-size:18px; color:blue; margin-left:10px;"></i>
 
+    <a name="about"></a>
     <p class="copyright"> &copy 2022 - handysolver. All Rights Reserved</p>
     <p class="name">Web design & Development : handysolver</p>
   </div>
@@ -182,6 +197,17 @@
       slides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " active";
     }
+
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
   </script>
 
 
